@@ -6,9 +6,9 @@ public class AverageCar extends TaxiCar {
 	public AverageCar(String carModel) {
 		Random rd = new Random();
 		setCarModel(carModel);
-		setSpeed(rd.nextInt(39 - 71));
+		setSpeed(rd.nextInt(70));
 		setCarCost(9_000);
-		setFuelConsumption(rd.nextInt(0 - 10));
+		setFuelConsumption(10);
 		setTax(0.4);
 	}
 

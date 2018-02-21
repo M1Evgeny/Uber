@@ -54,4 +54,18 @@ public class TaxiPark {
 			}
 		});
 	}
+
+	public void taxiParkInfo() {
+		if (carPark != null) {
+			for (TaxiCar car : carPark) {
+				if (car != null) {
+					System.out.println("Car madel: " + car.getCarModel());
+					System.out.println("Car speed: " + car.getSpeed());
+					System.out.println("Fuel consumation: "
+							+ car.getFuelConsumption());
+					System.out.println("Tax: " + car.getTax());
+				}
+			}
+		}
+	}
 }

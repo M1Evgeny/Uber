@@ -10,11 +10,11 @@ public class Truck extends TaxiCar {
 	public Truck(String carModel) {
 		Random rd = new Random();
 		setCarModel(carModel);
-		setSpeed(rd.nextInt(39 - 71));
+		setSpeed(rd.nextInt(50));
 		setCarCost(9_000);
-		setFuelConsumption(rd.nextInt(0 - 10));
+		setFuelConsumption(rd.nextInt(15));
 		setTax(0.6);
-		cargoHold = rd.nextInt(99 - 201);
+		cargoHold = rd.nextInt(200);
 	}
 
 	public int getCargoHold() {
