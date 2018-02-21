@@ -1,8 +1,8 @@
 package by.pvt.uber.runner;
 
-import by.pvt.uber.models.AverageCar;
-import by.pvt.uber.models.TaxiPark;
-import by.pvt.uber.models.Truck;
+import by.pvt.uber.model.AverageCar;
+import by.pvt.uber.model.TaxiPark;
+import by.pvt.uber.model.Truck;
 
 public class Runner {
 
