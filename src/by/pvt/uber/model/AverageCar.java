@@ -3,6 +3,8 @@ package by.pvt.uber.model;
 import java.util.Random;
 
 public class AverageCar extends TaxiCar {
+	Random rd = new Random();
+
 	public AverageCar(String carModel) {
 		setCarModel(carModel);
 		setSpeed(setRandomSpeed());
@@ -27,12 +29,10 @@ public class AverageCar extends TaxiCar {
 	}
 
 	private int setRandomSpeed() {
-		Random rd = new Random();
 		return rd.nextInt(70);
 	}
 
 	private int setRandomFuelConsumption() {
-		Random rd = new Random();
 		return rd.nextInt(10);
 	}
 }

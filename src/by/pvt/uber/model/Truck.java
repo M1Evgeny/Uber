@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Truck extends TaxiCar {
 
+	Random rd = new Random();
 	private int cargoHold;
 	private int curentCargo = 0;
 
@@ -50,17 +51,14 @@ public class Truck extends TaxiCar {
 	}
 
 	private int setRandomSpeed() {
-		Random rd = new Random();
 		return rd.nextInt(50);
 	}
 
 	private int setRandomFuelConsumption() {
-		Random rd = new Random();
 		return rd.nextInt(15);
 	}
 
 	private int setRandomCargoHold() {
-		Random rd = new Random();
 		return rd.nextInt(200);
 	}
 }
